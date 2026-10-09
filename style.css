@@ -1,4 +1,4 @@
-:root{--blue:#8bbcdc;--navy:#1b3a6e;--ink:#000;--soft:#f9f9f9}
+:root{color-scheme:only light;--blue:#8bbcdc;--navy:#1b3a6e;--ink:#000;--soft:#f9f9f9}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:"Nunito Sans","Avenir Next",Avenir,"Helvetica Neue",Arial,sans-serif;font-weight:300;font-size:1.06rem;line-height:1.85;color:var(--ink);background:#fff}
@@ -83,3 +83,5 @@ footer p{margin:0}
 .intro strong{font-weight:600}
 .ov.tall>img{aspect-ratio:1/1.05;max-height:none;width:76%}
 @media(min-width:900px){.ov.tall>img{width:42%}.ov.tall .card{margin:-190px 0 0 26%;width:64%}}
+
+video.video{background:#000;object-fit:contain}
