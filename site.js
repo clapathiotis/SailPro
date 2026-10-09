@@ -12,7 +12,7 @@
     btn.disabled=true;m.textContent='Sending…';
     fetch(f.dataset.endpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
       body:JSON.stringify({name:(d.get('first')+' '+d.get('last')).trim(),email:d.get('email'),message:d.get('message'),
-      _subject:'New message from sailpro.com.cy',_template:'table',_captcha:'false'})})
+      _subject:f.dataset.subject||'New message from sailpro.com.cy',_template:'table',_captcha:'false'})})
     .then(function(r){return r.json()})
     .then(function(j){
       if(j.success===true||j.success==='true'){m.textContent='Thank you! Your message has been sent.';f.reset();}

@@ -77,3 +77,9 @@ footer p{margin:0}
 .totop.show{opacity:1;pointer-events:auto}
 .fab svg,.totop svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
 .fab svg{fill:#fff;stroke:none}
+
+.page h1.light{font-weight:300}
+.intro{text-align:left;line-height:1.7;font-weight:400}
+.intro strong{font-weight:600}
+.ov.tall>img{aspect-ratio:1/1.05;max-height:none;width:76%}
+@media(min-width:900px){.ov.tall>img{width:42%}.ov.tall .card{margin:-190px 0 0 26%;width:64%}}
