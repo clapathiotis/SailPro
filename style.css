@@ -1,0 +1,29 @@
+:root{--bg:#fff;--fg:#14213d;--muted:#5b6475;--accent:#0a6ea8;--band:#f3f6fa}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1526;--fg:#eef2f8;--muted:#a7b1c2;--accent:#5bb4e8;--band:#142039}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--fg);line-height:1.65}
+a{color:var(--accent)}
+header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:12px 5vw;position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--band);z-index:5}
+header img{height:48px;display:block}
+nav{display:flex;flex-wrap:wrap;gap:4px 20px}
+nav a{text-decoration:none;color:var(--fg);font-family:system-ui,sans-serif;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.hero{position:relative;min-height:70vh;background:#000 center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 5vw}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.4)}
+.hero h1{position:relative;color:#fff;font-size:clamp(2rem,6vw,4rem);letter-spacing:.04em;margin:0;max-width:16ch}
+section{padding:56px 5vw;max-width:1100px;margin:auto}
+section.band{max-width:none;background:var(--band)}
+section.band>div{max-width:1100px;margin:auto}
+h2{font-size:1.5rem;letter-spacing:.06em;margin:0 0 12px}
+.grid{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.center{text-align:center}
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.gallery img,.wide{width:100%;height:auto;display:block;border-radius:4px}
+.video{aspect-ratio:16/9;width:100%;max-width:640px;margin:16px auto;display:block;border-radius:4px}
+.btn{display:inline-block;padding:10px 24px;border:2px solid var(--accent);text-decoration:none;font-family:system-ui,sans-serif;margin-top:8px}
+.btn:hover{background:var(--accent);color:var(--bg)}
+footer{background:var(--band);padding:40px 5vw;font-family:system-ui,sans-serif;font-size:.92rem;color:var(--muted)}
+footer .in{max-width:1100px;margin:auto;display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+footer h3{margin:0 0 8px;color:var(--fg);font-size:.85rem;letter-spacing:.1em}
+footer ul{list-style:none;margin:0;padding:0}
+.page{min-height:50vh}
