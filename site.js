@@ -17,7 +17,7 @@
     .then(function(j){
       if(j.success===true||j.success==='true'){m.textContent='Thank you! Your message has been sent.';f.reset();}
       else{throw new Error(j.message||'failed')}
-    }).catch(function(){m.textContent='Sorry, something went wrong. Please email sailpro.cy@gmail.com or WhatsApp +357 96774178.'})
+    }).catch(function(err){var t=String(err&&err.message||'');m.textContent=/activat/i.test(t)?'Almost ready: the form needs a one-time activation by the site owner (email sent). Please try again shortly, or email sailpro.cy@gmail.com / WhatsApp +357 96774178.':'Sorry, something went wrong. Please email sailpro.cy@gmail.com or WhatsApp +357 96774178.'})
     .finally(function(){btn.disabled=false});
   });
 })();

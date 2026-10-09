@@ -41,12 +41,13 @@ nav a:hover,nav a[aria-current]{color:var(--navy)}
 .page{max-width:1000px;margin:0 auto;padding:50px 22px 70px}
 .page h1{font-weight:400;font-size:clamp(2.4rem,7vw,3.4rem);text-align:center;margin:0 0 28px;line-height:1.2}
 .page .lead{text-align:left}
+.page h1.left{text-align:left;font-weight:500}
 .page img.full{width:100%;display:block;margin:0 0 26px}
 .soft{background:var(--soft)}
 .ov{margin:0 0 70px}
-.ov>img{display:block;width:80%;max-height:460px;object-fit:cover}
+.ov>img{display:block;width:80%;aspect-ratio:16/10;max-height:460px;object-fit:cover}
 .ov .card{position:relative;background:#fff;margin:-90px 0 0 14%;padding:30px 28px;box-shadow:0 4px 18px rgba(0,0,0,.06)}
-.ov .card h2{margin:0 0 14px;font-weight:800;font-size:2rem}
+.ov .card h2{margin:0 0 14px;font-weight:800;font-size:1.6rem}
 .ov .card p{margin:0}
 @media(min-width:900px){.ov>img{width:62%}.ov .card{margin:-340px 0 0 38%;width:62%;padding:44px 46px}}
 /* form */
