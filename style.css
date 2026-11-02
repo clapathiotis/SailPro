@@ -24,7 +24,7 @@ nav a:hover,nav a[aria-current]{color:var(--navy)}
 .hero h1{position:absolute;left:50%;bottom:9%;transform:translateX(-50%);width:min(90%,780px);margin:0;background:#fff;color:#000;text-align:center;font-weight:800;font-size:clamp(1.35rem,3.6vw,2.2rem);letter-spacing:.03em;line-height:1.35;padding:22px 26px}
 /* sections */
 .sec{max-width:860px;margin:0 auto;padding:56px 22px;text-align:center}
-.sec h2{font-weight:800;font-size:clamp(1.9rem,5vw,2.6rem);letter-spacing:.04em;text-transform:uppercase;margin:0 0 18px;line-height:1.2}
+.sec h1,.sec h2{font-weight:800;font-size:clamp(1.9rem,5vw,2.6rem);letter-spacing:.04em;text-transform:uppercase;margin:0 0 18px;line-height:1.2}
 .sec p{margin:0 0 1em}
 .proud{max-width:860px;margin:0 auto;padding:30px 22px 10px;text-align:center}
 .proud h2{font-weight:400;font-size:clamp(1.3rem,3.4vw,1.8rem);line-height:1.4;margin:0 0 36px}
@@ -34,7 +34,7 @@ nav a:hover,nav a[aria-current]{color:var(--navy)}
 .gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
 .wide{display:block;width:100%;max-height:75vh;object-fit:cover}
 .about{background:linear-gradient(rgba(255,255,255,.72),rgba(255,255,255,.72)),var(--bg) center/cover no-repeat}
-.about .sec h2{font-weight:300;font-size:clamp(2rem,6vw,3rem)}
+.about .sec h1,.about .sec h2{font-weight:300;font-size:clamp(2rem,6vw,3rem)}
 .btn{display:inline-block;margin-top:10px;padding:18px 54px;border:1px solid var(--blue);color:var(--navy);font-weight:800;font-size:1.15rem;text-decoration:none;background:transparent}
 .btn:hover{background:var(--blue);color:#fff}
 /* inner pages */
@@ -90,3 +90,4 @@ video.video{background:#000;object-fit:contain}
 .vwrap video.video{margin:0;max-width:100%}
 .sound{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.72);color:#fff;border:0;border-radius:24px;padding:10px 16px;font:inherit;font-weight:400;font-size:.95rem;cursor:pointer}
 .sound[hidden]{display:none}
+.page h2.left.light{text-align:left;font-weight:300;margin:0 0 28px;line-height:1.2}
